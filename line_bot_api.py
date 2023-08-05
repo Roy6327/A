@@ -7,6 +7,6 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, FollowEvent, UnfollowEvent, StickerSendMessage, ImageSendMessage, LocationSendMessage
 )
-
+# Channel access token
 line_bot_api = LineBotApi('tHtDbQSQJjIZcgHRRkgXrgj0CPLVeKMHZNk6akbQJCVvnLRmPf0TiQF/L/CXZ6+ItpUKaG+Yh1Z8YmEFDrWg+lXBavoEw8YXvhsX6dysouoeJZUbHnkdBzekZSl+c535b21o0pvCNqv/UeD7EYR37QdB04t89/1O/w1cDnyilFU=')
-hander = WebhookHandler('9b896be843e2ba632a0f456162a8585e')
+handler = WebhookHandler('9b896be843e2ba632a0f456162a8585e')#Channel secret
