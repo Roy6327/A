@@ -77,6 +77,9 @@ def service_category(event):
             ]
         )
     )
+    line_bot_api.reply_message(
+        event.reply_token,
+        [image_carousel_template_message])
 
 def service_category_event(event):
     data = dict(parse_qsl(event.postback.data))
