@@ -15,7 +15,7 @@ def about_us_event(event):
         }
     ]
 
-    text_message = TextSendMessage(text=''' A sir保險 
+    text_message = TextSendMessage(text='''$  A sir保險  $ 
 專業中醫推拿出身，融合東西方按摩手法
 
 -嚴格把關：所有用品皆有消毒或採一次用品。
