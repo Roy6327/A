@@ -15,7 +15,7 @@ def about_us_event(event):
         }
     ]
 
-    text_message = TextSendMessage(text='''$ Master SPA $
+    text_message = TextSendMessage(text='''🌟 A sir保險 🌟
 專業中醫推拿出身，融合東西方按摩手法
 
 -嚴格把關：所有用品皆有消毒或採一次用品。
@@ -42,10 +42,10 @@ def about_us_event(event):
     
 def location_event(event):
     location_message = LocationSendMessage(
-        title='Master SPA',
-        address='110台北市信義區信義路五段7號',
-        latitude=25.0333695,
-        longitude=121.5638839
+        title='A sir保險',
+        address='80049高雄市新興區中山一路243號',
+        latitude=22.635091097790564,
+        longitude=120.30228567854611
     )
 
     line_bot_api.reply_message(

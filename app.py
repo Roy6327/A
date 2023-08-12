@@ -1,6 +1,7 @@
 from flask import Flask, request, abort
 
 from events.basic import *
+from events.service import *
 from line_bot_api import *
 
 app = Flask(__name__)
@@ -34,16 +35,19 @@ def handle_message(event):
     elif message_text == '@營業據點':
         location_event(event)
 
+    elif message_text == '@預約服務':
+        service_category_event(event)
+
 @handler.add(FollowEvent)
 def handle_follow(event):
-    welcome_msg = """Hello! 您好，歡迎您成為 Master SPA 的好友！
+    welcome_msg = """Hi! 歡迎加入A sir的好友!
 
-我是Master SPA的小幫手 
+我是A sir小幫手 
 
--想預約按摩/臉部淨化護理服務都可以直接跟我互動喔~
--直接點選下方【歡迎光臨專屬您的SPA】選單功能
+-想預約規劃保險服務都可以直接跟我互動喔~
+-請直接點選下方選單功能
 
--期待您的光臨！"""
+-期待您的來信！"""
 
     line_bot_api.reply_message(
         event.reply_token,
