@@ -36,18 +36,21 @@ def handle_message(event):
 
 @handler.add(FollowEvent)
 def handle_follow(event):
-    welcome_msg = '''Hi! 您好，歡迎加入A Sir好友!
-    我是A Sir
-    
-    -想預約了解方案都可以直接跟我互動喲!
-    -直接點選下方選單功能
-    '''
+    welcome_msg = """Hello! 您好，歡迎您成為 Master SPA 的好友！
+
+我是Master SPA的小幫手 
+
+-想預約按摩/臉部淨化護理服務都可以直接跟我互動喔~
+-直接點選下方【歡迎光臨專屬您的SPA】選單功能
+
+-期待您的光臨！"""
 
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=welcome_msg) )
+        TextSendMessage(text=welcome_msg))
 
-@handler.app(UnfollowEvent)
+
+@handler.add(UnfollowEvent)
 def handle_unfollow(event):
     print(event)
     
