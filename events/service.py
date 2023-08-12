@@ -4,59 +4,41 @@ from urllib.parse import parse_qsl
 
 services = {
     1: {
-        'category':'計畫一',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'輕型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
-        'price':'1,827',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
+        'category': '按摩調理',
+        'img_url': 'https://drive.google.com/uc?export=download&id=15ftd3m_rOX3Op_js9B5OCiz2a4KyQfXi',
+        'title': '按摩調理（指壓／精油）',
+        'duration': '90min',
+        'description': '深層肌肉緊繃痠痛、工作壓力和緊繃情緒、身體疲勞者，想解除肌肉緊繃僵硬不適感',
+        'price': 2000,
+        'post_url': 'https://linecorp.com'
     },
     2: {
-        'category':'計畫一',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'普通重型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
-        'price':'2,546',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
+        'category': '按摩調理',
+        'img_url': 'https://drive.google.com/uc?export=download&id=1naYV7ySDy1PBTR9_smzchSu3xPfuKRYO',
+        'title': '運動按摩（按摩與伸展）',
+        'duration': '90min',
+        'description': '全身肌肉按摩放鬆與伸展，能夠改善運動後引發的延遲性痠痛，血液循環流通順暢',
+        'price': 1500,
+        'post_url': 'https://linecorp.com'
     },
     3: {
-        'category':'計畫二',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'輕型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
-        'price':'1,992',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
+        'category': '按摩調理',
+        'img_url': 'https://drive.google.com/uc?export=download&id=1dOiR8rnSski88B7s8tEClN6bR4OXP2VY',
+        'title': '熱石精油紓壓',
+        'duration': '90min',
+        'description': '「火山石」成份含有豐富礦物質及獨特的自然能量，溫熱觸感能活絡循環，鬆解疲勞感，舒緩肌肉緊繃',
+        'price': 2000,
+        'post_url': 'https://linecorp.com'
     },
     4: {
-        'category':'計畫二',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'普通重型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
-        'price':'2,904',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
+        'category': '臉部護理',
+        'img_url': 'https://drive.google.com/uc?export=download&id=1j9k2ivv1D3DwthQABmiI-PLsn6pN7sIZ',
+        'title': '粉刺淨化 + 深層保濕',
+        'duration': '90min',
+        'description': '臉部淨化，粉刺淨化 + 深層保濕繃',
+        'price': 1500,
+        'post_url': 'https://linecorp.com'
     },
-    5: {
-        'category':'計畫三',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'輕型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
-        'price':'2,181',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
-    },
-    6: {
-        'category':'計畫三',
-        'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
-        'title':'普通重型機車',
-        'duration':'30min',
-        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
-        'price':'3,009',
-        'post_url':'https://tw.piliapp.com/facebook-symbols/'
-    }
 }
 
 def service_category_event(event):
@@ -67,25 +49,25 @@ def service_category_event(event):
                 ImageCarouselColumn(
                     image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
-                        label='計畫一',
-                        display_text='想了解計畫一',
-                        data='action=service&category=計畫一'
+                        label='按摩調理',
+                        display_text='想了解按摩調理',
+                        data='action=service&category=按摩調理'
                     )
                 ),
                 ImageCarouselColumn(
                     image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
-                        label='計畫二',
-                        display_text='想了解計畫二',
-                        data='action=service&category=計畫二'
+                        label='按摩調理',
+                        display_text='想了解按摩調理',
+                        data='action=service&category=按摩調理'
                     )
                 ),
                 ImageCarouselColumn(
                     image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
-                        label='計畫三',
-                        display_text='想了解計畫三',
-                        data='action=service&category=計畫三'
+                        label='臉部護理',
+                        display_text='想了解臉部護理',
+                        data='action=service&category=臉部護理'
                     )
                 )
             ]
