@@ -6,49 +6,49 @@ services = {
     1: {
         'category':'計畫一',
         'img_url':'',
-        'title':'強制保險一年',
-        'description': '賠付對方體傷',
-        'price':'658',
+        'title':'輕型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
+        'price':'1,827',
         'post_url':''
     },
     2: {
         'category':'計畫一',
         'img_url':'',
-        'title':'強制保險兩年',
-        'description': '賠付對方體傷',
-        'price':'1200',
+        'title':'普通重型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
+        'price':'2,546',
         'post_url':''
     },
     3: {
         'category':'計畫二',
         'img_url':'',
-        'title':'強制保險+第三人責任險',
-        'description': '賠付對方體傷、財損',
-        'price':'1800',
+        'title':'輕型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
+        'price':'1,992',
         'post_url':''
     },
     4: {
-        'category':'計畫三',
+        'category':'計畫二',
         'img_url':'',
-        'title':'強制保險+第三人責任險',
-        'description': '賠付對方體傷、財損',
-        'price':'2500',
+        'title':'普通重型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
+        'price':'2,904',
         'post_url':''
     },
     5: {
         'category':'計畫三',
         'img_url':'',
-        'title':'強制保險+第三人責任險',
-        'description': '賠付對方體傷、財損',
-        'price':'2500',
+        'title':'輕型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
+        'price':'2,181',
         'post_url':''
     },
     6: {
         'category':'計畫三',
         'img_url':'',
-        'title':'強制保險+第三人責任險',
-        'description': '賠付對方體傷、財損',
-        'price':'2500',
+        'title':'普通重型機車',
+        'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
+        'price':'3,009',
         'post_url':''
     }
 }
@@ -61,17 +61,25 @@ def service_category_event(event):
                 ImageCarouselColumn(
                     image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
-                        label='按摩調理',
-                        display_text='想了解按摩調理',
-                        data='action=service&category=按摩調理'
+                        label='計畫一',
+                        display_text='想了解計畫一',
+                        data='action=service&category=計畫一'
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url='https://drive.google.com/uc?export=download&id=1-n-1HqfSsCJQmUhlYhPgWMowE6NTBDUR',
+                    image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
-                        label='臉部護理',
-                        display_text='想了解臉部護理',
-                        data='action=service&category=臉部護理'
+                        label='計畫二',
+                        display_text='想了解計畫二',
+                        data='action=service&category=計畫二'
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
+                    action=PostbackAction(
+                        label='計畫三',
+                        display_text='想了解計畫三',
+                        data='action=service&category=計畫三'
                     )
                 )
             ]
@@ -81,7 +89,7 @@ def service_category_event(event):
         event.reply_token,
         [image_carousel_template_message])
 
-def service_category_event(event):
+def service_event(event):
     data = dict(parse_qsl(event.postback.data))
     
     bubbles = []

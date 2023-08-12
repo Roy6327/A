@@ -6,7 +6,7 @@ from linebot.exceptions import (
 )
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, FollowEvent, UnfollowEvent, StickerSendMessage, ImageSendMessage, LocationSendMessage,
-    FlexSendMessage,TemplateSendMessage,ImageCarouselTemplate,ImageCarouselColumn, PostbackAction
+    FlexSendMessage,TemplateSendMessage,ImageCarouselTemplate,ImageCarouselColumn, PostbackAction,PostbackEvent
 )
 #Channel access token
 #Channel secret
