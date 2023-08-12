@@ -9,13 +9,13 @@ def about_us_event(event):
             "emojiId": "225"
         },
         {
-            "index": 13,
+            "index": 14,
             "productId": "5ac21184040ab15980c9b43a",
             "emojiId": "225"
         }
     ]
 
-    text_message = TextSendMessage(text='''$  A sir保險  $ 
+    text_message = TextSendMessage(text='''$   A sir保險   $ 
 專業中醫推拿出身，融合東西方按摩手法
 
 -嚴格把關：所有用品皆有消毒或採一次用品。
