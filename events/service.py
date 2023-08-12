@@ -172,4 +172,7 @@ def service_event(event):
             'contents': bubbles
         }
     )
+    line_bot_api.reply_message(
+        event.reply_token,
+        [flex_message])
 
