@@ -53,13 +53,13 @@ services = {
     },
 }
 
-def service_category(event):
+def service_category_event(event):
     image_carousel_template_message = TemplateSendMessage(
-        alt_text='請選擇服務類別',
+        alt_text='請選擇想服務類別',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url='https://i.imgur.com/w5Uc5dK.jpg',
+                    image_url='https://drive.google.com/uc?export=download&id=1UbeFJNmNF3PfPYDdoEEWPxZma5M82x-T',
                     action=PostbackAction(
                         label='按摩調理',
                         display_text='想了解按摩調理',
@@ -67,7 +67,7 @@ def service_category(event):
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url='https://i.imgur.com/w5Uc5dK.jpg',
+                    image_url='https://drive.google.com/uc?export=download&id=1-n-1HqfSsCJQmUhlYhPgWMowE6NTBDUR',
                     action=PostbackAction(
                         label='臉部護理',
                         display_text='想了解臉部護理',
