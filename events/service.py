@@ -7,6 +7,7 @@ services = {
         'category':'計畫一',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'輕型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
         'price':'1,827',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
@@ -15,6 +16,7 @@ services = {
         'category':'計畫一',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'普通重型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬',
         'price':'2,546',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
@@ -23,6 +25,7 @@ services = {
         'category':'計畫二',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'輕型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
         'price':'1,992',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
@@ -31,6 +34,7 @@ services = {
         'category':'計畫二',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'普通重型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+駕駛人險200萬+超額1000萬',
         'price':'2,904',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
@@ -39,6 +43,7 @@ services = {
         'category':'計畫三',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'輕型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
         'price':'2,181',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
@@ -47,6 +52,7 @@ services = {
         'category':'計畫三',
         'img_url':'https://i.imgur.com/w5Uc5dK.jpg',
         'title':'普通重型機車',
+        'duration':'30min',
         'description': '第三人責任險200/400/30+慰問金5萬+乘客險100萬+駕駛人險200萬+超額300萬',
         'price':'3,009',
         'post_url':'https://tw.piliapp.com/facebook-symbols/'
